@@ -16,7 +16,7 @@ function Home() {
       <Content>
         <AppSlide />
       </Content>
-      <Footer>
+      <Footer className="layout-footer">
           <AppFooter />
       </Footer>
       </Layout>
