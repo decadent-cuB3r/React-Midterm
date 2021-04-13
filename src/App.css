@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 
 /* RWD Container */
+
 .container {
     width: 100%;
     display: flex;
@@ -8,64 +9,56 @@
     margin: auto;
 }
 
+
 /* sm */
-@media (min-width: 576px) { 
-  .container {
-    width: 540px;
-  }
-} 
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
 
 /* md */
+
 @media (min-width: 768px) {
-  .container {
-    width: 720px;
-  }
-} 
+    .container {
+        width: 720px;
+    }
+}
+
 
 /* lg */
+
 @media (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
-} 
+    .container {
+        width: 960px;
+    }
+}
+
 
 /* xl */
+
 @media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
-} 
+    .container {
+        width: 1140px;
+    }
+}
+
 
 /* xxl */
+
 @media (min-width: 1600px) {
-  .container {
-    width: 1500px;
-  }
-} 
-
-/* General */
-.bg-white {
-  background-color: #fff;
+    .container {
+        width: 1500px;
+    }
 }
 
-.bg-yellow{
-  background-color: #FFD976;
-}
 
-.text-white{
-  color: #fff;
-}
-/* Header */
-.header-title-white{
-  color: #fff;
-}
-.nav-bar{
-  display: flex;
-  
-}
+/*header*/
 
-/* Footer */
-.footer{
-  width: 100px;
-  height: 100px;
+.header-wrap {
+    width: auto;
+    height: 126px;
+    background-color: #fff;
 }

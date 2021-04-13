@@ -1,5 +1,5 @@
 import { Layout } from 'antd';
-import AppNavBar from "../components/NavBar"
+import Appheader from "../components/Header"
 import AppFooter from "../components/Footer"
 import ProductList from "../components/ProductList";
 
@@ -9,7 +9,7 @@ function Home() {
   return (
     <Layout>
       <Header>
-          <AppNavBar title="test" />
+          <Appheader/>
       </Header>
       <Footer>
           <AppFooter />
