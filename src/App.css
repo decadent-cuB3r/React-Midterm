@@ -79,6 +79,12 @@ body {
     background-color: #fff;
 }
 
+.layout-footer {
+    background-color: #fff;
+    height: 102px;
+    padding: 0%;
+}
+
 
 /*Header*/
 
@@ -131,4 +137,30 @@ body {
 
 .header-nav-text:hover {
     color: #FFB800;
+}
+
+
+/*footer*/
+
+.bg-yellow {
+    background-color: #FFD976;
+    height: 102px;
+    width: 100%;
+    padding-top: 2px;
+}
+
+.footer-line {
+    width: 100px;
+    height: 0px;
+    margin-top: 38px;
+    border: 1px solid #FFFFFF;
+    line-height: 102px;
+}
+
+.text-white {
+    padding-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
 }
