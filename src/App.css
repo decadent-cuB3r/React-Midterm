@@ -43,16 +43,29 @@
   }
 } 
 
+/* General */
 .bg-white {
   background-color: #fff;
 }
-.hr-footer-line {
-  margin: 25px auto 30px;
-  padding: 0;
-  width: 300px;
-  border: 0;
-  border-top: solid 2px;
-  border-color: #3e3f97;
-  opacity: 1;
-  border-radius: 0.2rem;
+
+.bg-yellow{
+  background-color: #FFD976;
+}
+
+.text-white{
+  color: #fff;
+}
+/* Header */
+.header-title-white{
+  color: #fff;
+}
+.nav-bar{
+  display: flex;
+  
+}
+
+/* Footer */
+.footer{
+  width: 100px;
+  height: 100px;
 }

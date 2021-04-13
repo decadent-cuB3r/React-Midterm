@@ -1,8 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
-export default function NavBar() {
+export default function NavBar({title}) {
     return (
         <div className="nav-bar">
+            <Link to="/">
+                <h2 className="header-title-white">{title}</h2>
+            </Link>
             <NavLink to="/tableware" className="nav-item" activeClassName="nav-item--active">
                 Tableware
             </NavLink>
