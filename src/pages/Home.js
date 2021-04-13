@@ -8,8 +8,9 @@ const { Header, Content, Footer } = Layout;
 
 function Home() {
   return (
-    <Layout>
-      <Header>
+    <Layout className="container main-layout">
+      <Layout>
+      <Header className="layout-header">
           <Appheader/>
       </Header>
       <Content>
@@ -18,6 +19,7 @@ function Home() {
       <Footer>
           <AppFooter />
       </Footer>
+      </Layout>
     </Layout>
   );
 }
