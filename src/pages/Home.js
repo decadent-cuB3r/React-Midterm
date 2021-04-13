@@ -2,6 +2,7 @@ import { Layout } from 'antd';
 import Appheader from "../components/Header"
 import AppFooter from "../components/Footer"
 import ProductList from "../components/ProductList";
+import AppSlide from "../components/Carousel"
 
 const { Header, Content, Footer } = Layout;
 
@@ -12,7 +13,10 @@ function Home() {
       <Header className="layout-header">
           <Appheader/>
       </Header>
-      <Footer className="layout-footer">
+      <Content>
+        <AppSlide />
+      </Content>
+      <Footer>
           <AppFooter />
       </Footer>
       </Layout>
