@@ -7,13 +7,15 @@ const { Header, Content, Footer } = Layout;
 
 function Home() {
   return (
-    <Layout>
-      <Header>
+    <Layout className="container main-layout">
+      <Layout>
+      <Header className="layout-header">
           <Appheader/>
       </Header>
-      <Footer>
+      <Footer className="layout-footer">
           <AppFooter />
       </Footer>
+      </Layout>
     </Layout>
   );
 }
