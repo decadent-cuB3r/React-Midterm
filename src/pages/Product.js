@@ -1,10 +1,9 @@
-import { Card, Layout } from "antd";
+import { Layout } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
 import ProductList from "../components/ProductList";
 import AppSlide from "../components/Carousel";
-import products from "../json/products.json"
-import AppAbout from "../components/About"
+import products from "../json/products.json";
 
 const { Header, Content, Footer } = Layout;
 
@@ -16,8 +15,7 @@ function Home() {
           <Appheader />
         </Header>
         <Content>
-          <AppSlide />
-          <AppAbout />
+          <ProductList products={products} />
         </Content>
         <Footer>
           <AppFooter />

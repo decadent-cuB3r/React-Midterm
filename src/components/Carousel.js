@@ -6,14 +6,14 @@ import { Carousel } from "antd";
 export default function slide() {
   const contentStyle = {
     height: "160px",
-    color: "#fff",
+    color: "#yellow",
     lineHeight: "160px",
     textAlign: "center",
     background: "#364d79",
   };
   return (
-    <div>
-      <Carousel autoplay>
+    <div className="carousel">
+      <Carousel autoplay className="carousel-self">
         <div>
           <img className="carousel-img" src={Banner1}></img>
         </div>
@@ -24,6 +24,7 @@ export default function slide() {
           <img className="carousel-img" src={Banner3}></img>
         </div>
       </Carousel>
+      <div className="carousel-block-yellow"></div>
     </div>
   );
 }

@@ -132,3 +132,23 @@ body {
 .header-nav-text:hover {
     color: #FFB800;
 }
+
+/* carousel */
+.carousel{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.carousel-self{
+  transform: scale(0.7);
+  z-index: 12;
+}
+.carousel-block-yellow{
+  background-color: #FFD976;
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  z-index: 10;
+  top: 250px;
+}
