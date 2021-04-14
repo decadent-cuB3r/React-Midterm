@@ -21,3 +21,4 @@ export default function ProductItem({ product }) {
     </Card>
   );
 }
+
