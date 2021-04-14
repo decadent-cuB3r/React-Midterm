@@ -5,6 +5,7 @@ import ProductList from "../components/ProductList";
 import AppSlide from "../components/Carousel";
 import products from "../json/products.json"
 import AppAbout from "../components/About"
+import Process from "../components/Process"
 
 const { Header, Content, Footer } = Layout;
 
@@ -18,6 +19,7 @@ function Home() {
         <Content>
           <AppSlide />
           <AppAbout />
+          <Process products={products} />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />

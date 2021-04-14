@@ -1,8 +1,6 @@
-import { Layout, Card } from 'antd';
 import { Link } from 'react-router-dom';
 import about from "../images/about.jpg"
 
-const { Sider, Content } = Layout;
 
 export default function About() {
     return (

@@ -246,6 +246,122 @@ body {
 }
 
 
+/*process*/
+
+.process-layout {
+    background-color: #FFD976;
+}
+
+.process-intro {
+    height: 328px;
+}
+
+.process-title {
+    height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 1%;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFAEC;
+}
+
+.process-line {
+    border: 2px solid #FFFAEC;
+    text-align: center;
+    width: 212px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.intro-image {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.process-image {
+    padding: 0%;
+}
+
+
+/*process-order*/
+
+.process-order {
+    height: 350px;
+    background: #FFB800;
+}
+
+.process-arrow-between {
+    width: 198px;
+    height: 30spx;
+    border-style: solid;
+    border-width: 30px 100px 0 100px;
+    border-color: #FFD976 transparent transparent transparent;
+    margin: auto;
+}
+
+.order-number-block {
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.block-circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 999em;
+    background: #FDEFC7;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 115px;
+    color: #FFB800;
+    text-align: center;
+}
+
+.block-arrow {
+    margin-top: 3%;
+    width: 58px;
+    height: 58px;
+    mix-blend-mode: luminosity;
+}
+
+.order-number-text {
+    display: flex;
+    width: 1330px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.number-intro {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.order-btn {
+    width: 264px;
+    height: 49px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    color: #FFB800;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+    line-height: 49px;
+}
+
+
 /*footer*/
 
 .bg-yellow {
