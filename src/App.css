@@ -1,15 +1,6 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* RWD Container */
-
-.container {
-    width: 100%;
-    display: flex;
-    align-self: center;
-    margin: auto;
-}
-
 
 /* sm */
 
@@ -55,13 +46,21 @@
     }
 }
 
-
-/*General*/
+/* RWD Container */
 
 .container {
     width: 100%;
     display: flex;
+    align-self: center;
+    margin: auto;
 }
+
+/*General*/
+
+/* .container {
+    width: 100%;
+    display: flex;
+} */
 
 body {
     font-size: 16px;
@@ -146,16 +145,29 @@ body {
   z-index: 1;
   overflow: hidden;
 }
+
+.carousel-self-size{
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.8);
+  z-index: 10;
+}
 .carousel-self{
-  transform: scale(0.7);
+  margin-left: auto;
+  margin-right: auto;
   z-index: 12;
 }
+
+.carousel-img {
+  height: auto;
+}
+
 .carousel-block-yellow{
   background-color: #FFD976;
   position: absolute;
   width: 100%;
-  height: 400px;
-  z-index: 10;
+  height: 500px;
+  z-index: -3;
   top: 250px;
 }
 

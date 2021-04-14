@@ -13,17 +13,19 @@ export default function slide() {
   };
   return (
     <div className="carousel">
-      <Carousel autoplay className="carousel-self">
-        <div>
-          <img className="carousel-img" src={Banner1}></img>
-        </div>
-        <div>
-          <img className="carousel-img" src={Banner2}></img>
-        </div>
-        <div>
-          <img className="carousel-img" src={Banner3}></img>
-        </div>
-      </Carousel>
+      <div className="carousel-self-size">
+        <Carousel autoplay className="carousel-self">
+          <div>
+            <img className="carousel-img" src={Banner1}></img>
+          </div>
+          <div>
+            <img className="carousel-img" src={Banner2}></img>
+          </div>
+          <div>
+            <img className="carousel-img" src={Banner3}></img>
+          </div>
+        </Carousel>
+      </div>
       <div className="carousel-block-yellow"></div>
     </div>
   );
