@@ -1,4 +1,4 @@
-import { Card, Layout } from "antd";
+import { Layout } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
 import AppSlide from "../components/Carousel";

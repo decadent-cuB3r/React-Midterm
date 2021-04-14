@@ -1,13 +1,18 @@
 import { Layout } from "antd";
+import { useContext } from "react";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
 import ProductList from "../components/ProductList";
 import AppSlide from "../components/Carousel";
-import products from "../json/products.json";
+// import products from "../json/products.json";
+// import mahjong from "../json/mahjong.json"
+
+import { StoreContext } from "../store"
 
 const { Header, Content, Footer } = Layout;
 
-function Home() {
+function Product() {
+  const { state: { products } } = useContext(StoreContext);
   return (
     <Layout className="container main-layout">
       <Layout>
@@ -26,4 +31,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Product;

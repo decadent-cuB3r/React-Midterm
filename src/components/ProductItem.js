@@ -1,16 +1,6 @@
 import { Card, Button, notification } from "antd";
 import { Link } from "react-router-dom";
-
-const openNotification = () => {
-  notification.open({
-    message: "Notification Title",
-    description:
-      "This is the content of the notification. This is the content of the notification. This is the content of the notification.",
-    onClick: () => {
-      console.log("Notification Clicked!");
-    },
-  });
-};
+import AddToCart from './AddToCart'
 
 export default function ProductItem({ product }) {
   return (
@@ -23,9 +13,10 @@ export default function ProductItem({ product }) {
         <span className="text-gray">NTD {product.price}</span>
       </div>
       <div className="product-functions">
-        <Button type="default" onClick={openNotification}>
-          加入購物車
-        </Button>
+        <AddToCart />
+        <Link to={`/product/${product.id}`}>
+          <Button type="ghost">More</Button>
+        </Link>
       </div>
     </Card>
   );
