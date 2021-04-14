@@ -1,7 +1,6 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 /* sm */
 
 @media (min-width: 576px) {
@@ -46,6 +45,7 @@
     }
 }
 
+
 /* RWD Container */
 
 .container {
@@ -55,7 +55,9 @@
     margin: auto;
 }
 
+
 /*General*/
+
 
 /* .container {
     width: 100%;
@@ -224,7 +226,7 @@ body {
 }
 
 .about-content-line {
-    border: 3px solid #FFB524;
+    border: 2px solid #FFB524;
     width: 550px;
     margin-left: 5%;
 }
@@ -358,6 +360,78 @@ body {
     margin: auto;
     margin-top: 1%;
     line-height: 49px;
+}
+
+
+/*location*/
+
+.location-layout {
+    height: 400px;
+    background-color: #fff;
+}
+
+.location-position {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    padding-top: 1.5%;
+    justify-content: space-between;
+}
+
+.location-intro-title {
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    padding-bottom: 2%;
+}
+
+.location-map {
+    width: 720px;
+    height: 340px;
+}
+
+.location-intro {
+    height: 216px;
+    width: 357px;
+}
+
+.location-intro-line {
+    border: 2px solid #000000;
+    width: 390px;
+}
+
+.intro-information {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.location-intro-text {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.location-img {
+    width: 18px;
+    height: 30px;
+}
+
+.location-btn {
+    background: #FFFFFF;
+    border: 3px solid #FFB800;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    color: #FFB800;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10%;
+    margin-left: 65%;
 }
 
 

@@ -39,10 +39,14 @@ export default function Process({ products }) {
           <div class="number-intro">專業技師現場安裝電動麻將桌</div>
           <div class="number-intro">客戶電動麻將桌實際操作,保養說明</div>
           <div class="number-intro">
-            客戶收取工作單客戶聯及電<br/>動麻將桌產品保固卡
+            客戶收取工作單客戶聯及電
+            <br />
+            動麻將桌產品保固卡
           </div>
         </div>
-        <div className="order-btn">深入了解我們的服務</div>
+        <Link to="/">
+          <div className="order-btn">深入了解我們的服務</div>
+        </Link>
       </div>
     </div>
   );
