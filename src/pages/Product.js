@@ -15,9 +15,10 @@ function Home() {
           <Appheader />
         </Header>
         <Content>
+          <AppSlide />
           <ProductList products={products} />
         </Content>
-        <Footer>
+        <Footer className="layout-footer">
           <AppFooter />
         </Footer>
       </Layout>

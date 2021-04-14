@@ -1,17 +1,17 @@
-import { Card, Layout } from "antd";
+import { Layout } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
-import ProductList from "../components/ProductList";
 import AppSlide from "../components/Carousel";
-import products from "../json/products.json"
 import AppAbout from "../components/About"
 import Process from "../components/Process"
+import Location from "../components/Location"
+import products from "../json/products.json"
 
 const { Header, Content, Footer } = Layout;
 
 function Home() {
   return (
-    <Layout className="container main-layout">
+    <Layout className="container">
       <Layout>
         <Header className="layout-header">
           <Appheader />
@@ -20,6 +20,7 @@ function Home() {
           <AppSlide />
           <AppAbout />
           <Process products={products} />
+          <Location />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />

@@ -1,15 +1,6 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* RWD Container */
-
-.container {
-    width: 100%;
-    display: flex;
-    align-self: center;
-    margin: auto;
-}
-
 
 /* sm */
 
@@ -55,13 +46,21 @@
     }
 }
 
-
-/*General*/
+/* RWD Container */
 
 .container {
     width: 100%;
     display: flex;
+    align-self: center;
+    margin: auto;
 }
+
+/*General*/
+
+/* .container {
+    width: 100%;
+    display: flex;
+} */
 
 body {
     font-size: 16px;
