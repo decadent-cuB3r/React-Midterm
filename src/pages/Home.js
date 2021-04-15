@@ -5,7 +5,7 @@ import AppSlide from "../components/Carousel";
 import AppAbout from "../components/About"
 import Process from "../components/Process"
 import Location from "../components/Location"
-import products from "../json/products.json"
+import tables from "../json/tables.json"
 
 const { Header, Content, Footer } = Layout;
 
@@ -19,7 +19,7 @@ function Home() {
         <Content>
           <AppSlide />
           <AppAbout />
-          <Process products={products} />
+          <Process products={tables} />
           <Location />
         </Content>
         <Footer className="layout-footer">
