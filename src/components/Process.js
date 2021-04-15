@@ -27,11 +27,11 @@ export default function Process({ products }) {
         <div className="process-arrow-between"></div>
         <div className="order-number-block">
           <div className="block-circle">1</div>
-          <img className="block-arrow" src={arrow}></img>
+          <img className="block-arrow" src={arrow} alt="arrow" />
           <div className="block-circle">2</div>
-          <img className="block-arrow" src={arrow}></img>
+          <img className="block-arrow" src={arrow} alt="arrow" />
           <div className="block-circle">3</div>
-          <img className="block-arrow" src={arrow}></img>
+          <img className="block-arrow" src={arrow} alt="arrow" />
           <div className="block-circle">4</div>
         </div>
         <div className="order-number-text">

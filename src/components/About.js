@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="layout-about">
             <div className="about-sider">
-                <img className="about-img"src={about} />
+                <img className="about-img"src={about} alt="About" />
             </div>
             <div className="about-content">
                 <div className="about-content-block">

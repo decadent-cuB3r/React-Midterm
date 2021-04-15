@@ -1,4 +1,4 @@
-import { Card, Button, notification } from "antd";
+import { Card, Button } from "antd";
 import { Link } from "react-router-dom";
 import AddToCart from './AddToCart'
 

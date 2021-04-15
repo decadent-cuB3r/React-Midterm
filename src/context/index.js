@@ -5,7 +5,7 @@ import { SET_PRODUCT_ITEMS, SET_NAVBAR_ACTIVEITEM } from "../utils/constants";
 
 export const StoreContext = createContext();
 const initialState = {
-  products: {
+  page: {
     products,
   },
   navBar: {
@@ -19,7 +19,10 @@ function reducer(state, action) {
     case SET_PRODUCT_ITEMS:
       return {
         ...state,
-        products: action.payload,
+        page: {
+          ...state.page,
+          products: action.payload
+        },
       };
     case SET_NAVBAR_ACTIVEITEM:
       return {

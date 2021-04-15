@@ -6,7 +6,7 @@ import {
 export const pageContentsSet = (dispatch, products) => {
     dispatch({
       type: SET_PRODUCT_ITEMS,
-      payload: {products},
+      payload: products,
     });
   };
   

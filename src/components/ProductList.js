@@ -1,22 +1,46 @@
 import { Row, Col } from "antd";
 import ProductItem from "./ProductItem";
-import dice from "../images/dice.png"
-import NavItem from "./NavItem"
+import dice from "../images/dice.png";
+import NavItem from "./NavItem";
 
 export default function ProductList({ products }) {
   return (
     <div>
-      <div>
+      <div className="productlist-container">
         <div className="productlist">
-          <img src = {dice} />
+          <img src={dice} alt="dice" />
           <h1 className="productlist-title">產品資訊</h1>
-          <img src={ dice } />
+          <img src={dice} alt="dice" />
         </div>
         <div className="productlist-NavBar">
-          <NavItem to="/product/tables" activeClassName="productlist-NavBarItem--active" className="productlist-NavBarItem">電動麻將桌</NavItem>
-          <NavItem to="/product" activeClassName="productlist-NavBarItem--active" className="productlist-NavBarItem">電動麻將桌專用配件</NavItem>
-          <NavItem to="/product/mahjong" activeClassName="productlist-NavBarItem--active" className="productlist-NavBarItem">手打麻將</NavItem>
-          <NavItem to="/product" activeClassName="productlist-NavBarItem--active" className="productlist-NavBarItem">周邊商品</NavItem>
+          <NavItem
+            to="/product/tables"
+            activeClassName="productlist-NavBarItem--active"
+            className="productlist-NavBarItem"
+          >
+            電動麻將桌
+          </NavItem>
+          <NavItem
+            to="/product/tableAccessory"
+            activeClassName="productlist-NavBarItem--active"
+            className="productlist-NavBarItem"
+          >
+            電動麻將桌專用配件
+          </NavItem>
+          <NavItem
+            to="/product/mahjong"
+            activeClassName="productlist-NavBarItem--active"
+            className="productlist-NavBarItem"
+          >
+            手打麻將
+          </NavItem>
+          <NavItem
+            to="/product/other"
+            activeClassName="productlist-NavBarItem--active"
+            className="productlist-NavBarItem"
+          >
+            周邊商品
+          </NavItem>
         </div>
       </div>
       <Row gutter={[32, 32]}>

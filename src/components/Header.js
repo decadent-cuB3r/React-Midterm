@@ -10,7 +10,7 @@ export default function header(){
             <header className="header-wrap">
                 <div className="header-logo">
                     <Link to ="/">
-                        <img className="logo-img"src={logo}></img>
+                        <img className="logo-img"src={logo} alt="logo" />
                     </Link>
                 </div>
                 <div className="header-nav">
@@ -22,13 +22,13 @@ export default function header(){
                 </div>
                 <div className="header-icon">
                     <Link to ="/">
-                        <img className="icon-img" src={cart}></img>
+                        <img className="icon-img" src={cart} alt="icon" />
                     </Link>
                     <Link to ="/">
-                        <img className="icon-img" src={fb}></img>
+                        <img className="icon-img" src={fb} alt="icon" />
                     </Link>
                     <Link to ="/">
-                        <img className="icon-img" src={line}></img>
+                        <img className="icon-img" src={line} alt="icon" />
                     </Link>
                 </div>
             </header>

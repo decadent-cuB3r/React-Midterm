@@ -1,18 +1,18 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import ProductList from "./pages/Product";
+import HomePage from "./pages/Home";
+import ProductPage from "./pages/Product";
 
-import { StoreProvider } from "./store/index";
+import { StoreProvider } from "./context/index";
 
 function App() {
   return (
     <StoreProvider>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/product" component={ProductList} />
-          <Route exact path="/product/:product" component={ProductList} />
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/product" component={ProductPage} />
+          <Route exact path="/product/:product" component={ProductPage} />
         </Switch>
       </BrowserRouter>
     </StoreProvider>
