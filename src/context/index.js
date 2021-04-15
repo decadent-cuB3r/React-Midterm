@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import react, { createContext } from "react";
 import useReducerWithThunk from "use-reducer-thunk";
 import products from "../json/products.json";
 import { SET_PRODUCT_ITEMS, SET_NAVBAR_ACTIVEITEM } from "../utils/constants";
@@ -9,7 +9,7 @@ const initialState = {
     products,
   },
   navBar: {
-    activeItem: "/product",
+    activeItem: "/",
   },
 };
 
