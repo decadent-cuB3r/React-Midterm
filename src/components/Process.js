@@ -90,7 +90,7 @@ export default class MultipleItems extends Component {
                 <div className="block-circle">1</div>
                 <div class="number-intro">銷售人員與客戶簽訂產品訂購單</div>
               </div>
-              <img className="block-arrow" src={arrow} alt="arrow" />
+              <img className="block-arrow-btw" src={arrow} alt="arrow" />
               <div className="order-col">
                 <div className="block-circle">2</div>
                 <div class="number-intro">專業技師現場安裝電動麻將桌</div>
@@ -104,7 +104,7 @@ export default class MultipleItems extends Component {
                   專業技師現場安裝電動麻將桌客戶電動麻將桌實際操作,保養說明
                 </div>
               </div>
-              <img className="block-arrow" src={arrow} alt="arrow" />
+              <img className="block-arrow-btw" src={arrow} alt="arrow" />
               <div className="order-col">
                 <div className="block-circle">4</div>
                 <div class="number-intro">

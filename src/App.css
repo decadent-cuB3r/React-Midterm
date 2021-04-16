@@ -328,11 +328,16 @@ body {
     text-align: center;
 }
 
-.block-arrow {
+.block-arrow,
+.block-arrow-btw {
     margin-top: 3%;
     width: 58px;
     height: 58px;
     mix-blend-mode: luminosity;
+}
+
+.block-arrow-btw {
+    margin-top: 7%;
 }
 
 .order-number-text {
