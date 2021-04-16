@@ -15,9 +15,8 @@ function ProductDetail({ product }) {
       </Col>
       <Col lg={{ span: 12 }}>
         <div className="product-info--detail">
-          <h2 className="product-category">{product.category}</h2>
           <h1 className="product-name product-name--large">{product.name}</h1>
-          <p className="product-description">{product.description_long}</p>
+          {/* <p className="product-description">{product.description}</p> */}
           <div className="product-price-wrap">
             <p className="product-price product-price--large">
               ${product.price}.00
@@ -25,7 +24,7 @@ function ProductDetail({ product }) {
             <p className="product-status">
               Status: {product.countInStock > 0 ? "In Stock" : "Unavailable."}
             </p>
-            <div className="product-qty">
+            {/* <div className="product-qty">
               Qty: {"   "}
               <Select
                 defaultValue={qty}
@@ -38,9 +37,9 @@ function ProductDetail({ product }) {
                   </Option>
                 ))}
               </Select>
-            </div>
-            <p className="product-qty">Total Price: ${product.price * qty}</p>
-            <AddToCart product={product} qty={qty} />
+            </div> */}
+            {/* <p className="product-qty">Total Price: ${product.price * qty}</p> */}
+            <AddToCart />
           </div>
         </div>
       </Col>

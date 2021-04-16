@@ -5,7 +5,7 @@ import AddToCart from './AddToCart'
 export default function ProductItem({ product }) {
   return (
     <Card className="bg-gray product">
-      <Link to={`/product/${product.id}`}>
+      <Link to={`/detail/${product.id}`}>
         <img style={{ width: "100%" }} src={product.image} alt={product.name} />
       </Link>
       <div className="product-info">
@@ -14,7 +14,7 @@ export default function ProductItem({ product }) {
       </div>
       <div className="product-functions">
         <AddToCart />
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/detail/${product.id}`}>
           <Button type="ghost">More</Button>
         </Link>
       </div>
