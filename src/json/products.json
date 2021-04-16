@@ -2,7 +2,6 @@
   {
     "id": "1tE4nK",
     "name": "一吉郎",
-    "sku": "sku_313355",
     "price": 14800,
     "image": "http://www.taiwan-wujyi.com.tw/uploads/product/201706/480_360/201706121128000035.png",
     "description": [
@@ -26,13 +25,11 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "currency": "NTD",
     "countInStock": 3
   },
   {
     "id": "IuFGYl",
     "name": "二吉郎",
-    "sku": "sku_313356",
     "price": 16800,
     "image": "http://www.taiwan-wujyi.com.tw/uploads/product/201706/480_360/201706121335241e95.png",
     "description": [
@@ -57,13 +54,11 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "currency": "NTD",
     "countInStock": 6
   },
   {
     "id": "VfcByl",
     "name": "三吉郎",
-    "sku": "sku_622147",
     "price": 25800,
     "image": "http://www.taiwan-wujyi.com.tw/uploads/product/201706/480_360/201706121340055c65.png",
     "description": [
@@ -88,13 +83,11 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "currency": "NTD",
     "countInStock": 4
   },
   {
     "id": "1yF2Ib",
     "name": "四吉郎",
-    "sku": "sku_125983",
     "price": 30800,
     "image": "http://www.taiwan-wujyi.com.tw/uploads/product/201706/480_360/20170612135258c251.png",
     "description": [
@@ -119,13 +112,11 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "currency": "NTD",
     "countInStock": 5
   },
   {
     "id": "x5m8g3",
     "name": "五吉郎",
-    "sku": "sku_559961",
     "price": 40000,
     "image": "http://www.taiwan-wujyi.com.tw/uploads/product/201706/480_360/201706121343054b14.png",
     "description": [
@@ -149,7 +140,141 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "currency": "NTD",
     "countInStock": 2
+  },
+  {
+    "id": "tb2Jd1",
+    "name": "電動麻將桌專用籌碼盒裝(100P 鋁盒)",
+    "price": 1000,
+    "image": "https://www.eastking.com.tw/upload/peripheral/top_100p_2.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "djhksd",
+    "name": "名媛茶几",
+    "price": 1200,
+    "image": "https://www.eastking.com.tw/upload/peripheral/amtr_m.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "2nfe8e",
+    "name": "實用茶几",
+    "price": 500,
+    "image": "https://www.eastking.com.tw/upload/peripheral/m_g6ru.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "8wnrfi",
+    "name": "卡夢椅",
+    "price": 2500,
+    "image": "https://www.eastking.com.tw/upload/peripheral/m_d83_f.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "cnejk8",
+    "name": "電動麻將桌木蓋板(珠光紫紅色)",
+    "price": 1500,
+    "image": "https://www.eastking.com.tw/upload/peripheral/m_red_f.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "Kn4Et1",
+    "name": "Hello Kitty 繽紛版麻將套裝收藏組合",
+    "price": 14800,
+    "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-261B.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "lYGFuI",
+    "name": "Duncan X 東方不敗麻將套裝組_電動桌兩用款",
+    "price": 16800,
+    "image": "https://www.eastking.com.tw/upload/peripheral/m_duncan_1.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "lyBcfV",
+    "name": "東方不敗藝術手工毫雕四大名著麻將",
+    "price": 25800,
+    "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-1-3B.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "bI2Fy1",
+    "name": "東方無聲派",
+    "price": 30800,
+    "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-132B.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "3g8m5x",
+    "name": "蛋黃哥懶得打麻將組",
+    "price": 40000,
+    "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-G601B.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "opdsf8",
+    "name": "ST百家樂/德州撲克桌/21點",
+    "price": 35000,
+    "image": "https://www.eastking.com.tw/upload/peripheral/casino1-2B.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "42f98s",
+    "name": "ALL IN (片/紅桃)",
+    "price": 1200,
+    "image": "https://www.eastking.com.tw/upload/peripheral/1RX-33-1-m.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "39cn3d",
+    "name": "自動撲克洗牌機(鐵制二副洗)",
+    "price": 500,
+    "image": "https://www.eastking.com.tw/upload/peripheral/pokos_m.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "idhdo3",
+    "name": "中骨牌蓋牌盒",
+    "price": 2500,
+    "image": "https://www.eastking.com.tw/upload/peripheral/casino3-8B.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
+  },
+  {
+    "id": "qbuw38",
+    "name": "德州撲克DEALER",
+    "price": 1500,
+    "image": "https://www.eastking.com.tw/upload/peripheral/dealer-2_m.jpg",
+    "description": [""],
+    "description_payment": [""],
+    "countInStock": 3
   }
 ]

@@ -1,26 +1,21 @@
 import { Layout } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
-import AppSlide from "../components/Carousel";
-import AppAbout from "../components/About"
-import Process from "../components/Process"
-import Location from "../components/Location"
-import tables from "../json/tables.json"
+import ProductDetail from "../components/ProductDetail";
+import products from "../json/products.json";
 
 const { Header, Content, Footer } = Layout;
 
-function Home() {
+function DetailPage({match}) {
+  const choseproduct = products.find((x) => x.id === match.params.productId);
   return (
-    <Layout className="container">
+    <Layout className="container main-layout">
       <Layout>
         <Header className="layout-header">
           <Appheader />
         </Header>
         <Content>
-          <AppSlide />
-          <AppAbout />
-          <Process products={tables} />
-          <Location />
+          <ProductDetail product={choseproduct} />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />
@@ -30,4 +25,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default DetailPage;

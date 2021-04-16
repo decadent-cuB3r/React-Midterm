@@ -11,7 +11,7 @@ export default function Map() {
           </div>
           <hr className="location-intro-line"></hr>
           <div className="location-intro-text">
-            <img className="location-img" src={location}></img>
+            <img className="location-img" src={location} alt="Map" />
             <div class="intro-information">
               105台北市南港區八德路四段911號1樓
               <br />

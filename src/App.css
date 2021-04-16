@@ -201,6 +201,38 @@ body {
     text-align: center;
 }
 
+/* productlist */
+.productlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productlist-title::after{
+  content: " ";
+  position: absolute;
+  border-bottom: solid black 4px;
+}
+.productlist-NavBar {
+  display: flex;
+  justify-content: center;
+}
+.productlist-NavBarItem{
+  color: #828282;
+  width: 200px;
+  text-align: center;
+  line-height: 48px;
+}
+.productlist-NavBarItem:hover{
+  transition: 0.3s;
+  color: #828282;
+  height: 48px;
+  width: 200px;
+  background-color: #8BB98D;
+}
+.productlist-NavBarItem--active{
+  background-color: #8BB98D;
+  border-radius: 30px;
+}
 
 /*process*/
 

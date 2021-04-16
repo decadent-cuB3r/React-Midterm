@@ -4,25 +4,18 @@ import Banner3 from "../images/carousel/banner3.png";
 import { Carousel } from "antd";
 
 export default function slide() {
-  const contentStyle = {
-    height: "160px",
-    color: "#yellow",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
   return (
     <div className="carousel">
       <div className="carousel-self-size">
         <Carousel autoplay className="carousel-self">
           <div>
-            <img className="carousel-img" src={Banner1}></img>
+            <img className="carousel-img" src={Banner1} alt="Banner" />
           </div>
           <div>
-            <img className="carousel-img" src={Banner2}></img>
+            <img className="carousel-img" src={Banner2} alt="Banner" />
           </div>
           <div>
-            <img className="carousel-img" src={Banner3}></img>
+            <img className="carousel-img" src={Banner3} alt="Banner" />
           </div>
         </Carousel>
       </div>
