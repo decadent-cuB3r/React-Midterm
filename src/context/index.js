@@ -21,7 +21,7 @@ function reducer(state, action) {
         ...state,
         page: {
           ...state.page,
-          products: action.payload
+          products: action.payload,
         },
       };
     case SET_NAVBAR_ACTIVEITEM:
@@ -46,7 +46,8 @@ export function StoreProvider(props) {
 
   return (
     <StoreContext.Provider value={value}>
-      {props.children}
+      {" "}
+      {props.children}{" "}
     </StoreContext.Provider>
   );
 }
