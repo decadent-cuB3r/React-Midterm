@@ -304,7 +304,7 @@ body {
 }
 
 .order-number-block {
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -328,16 +328,11 @@ body {
     text-align: center;
 }
 
-.block-arrow,
-.block-arrow-btw {
-    margin-top: 3%;
+.block-arrow {
+    margin-top: 7%;
     width: 58px;
     height: 58px;
     mix-blend-mode: luminosity;
-}
-
-.block-arrow-btw {
-    margin-top: 7%;
 }
 
 .order-number-text {
