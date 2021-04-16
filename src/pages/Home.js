@@ -3,7 +3,7 @@ import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
 import AppSlide from "../components/Carousel";
 import AppAbout from "../components/About"
-import Process from "../components/Process"
+import MultipleItems from "../components/Process"
 import Location from "../components/Location"
 import tables from "../json/tables.json"
 
@@ -19,7 +19,7 @@ function Home() {
         <Content>
           <AppSlide />
           <AppAbout />
-          <Process products={tables} />
+          <MultipleItems />
           <Location />
         </Content>
         <Footer className="layout-footer">

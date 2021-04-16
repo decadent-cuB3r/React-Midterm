@@ -24,6 +24,7 @@ export default function Map() {
             <div className="location-btn">與我聯繫</div>
           </Link>
         </div>
+        <div className="map-block">
         <iframe
           className="location-map"
           title="Map to Store"
@@ -33,6 +34,7 @@ export default function Map() {
           allowfullscreen=""
           loading="lazy"
         ></iframe>
+        </div>
       </div>
     </div>
   );
