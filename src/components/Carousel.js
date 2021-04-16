@@ -4,13 +4,6 @@ import Banner3 from "../images/carousel/banner3.png";
 import { Carousel } from "antd";
 
 export default function slide() {
-  const contentStyle = {
-    height: "160px",
-    color: "#yellow",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
   return (
     <div className="carousel">
       <div className="carousel-self-size">

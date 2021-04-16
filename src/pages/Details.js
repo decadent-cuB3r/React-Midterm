@@ -2,12 +2,12 @@ import { Layout } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
 import ProductDetail from "../components/ProductDetail";
-import Products from "../json/products.json";
+import products from "../json/products.json";
 
 const { Header, Content, Footer } = Layout;
 
-function DetailPage(match) {
-  const product = Products.find((x) => x.id === match.params.id);
+function DetailPage({match}) {
+  const choseproduct = products.find((x) => x.id === match.params.productId);
   return (
     <Layout className="container main-layout">
       <Layout>
@@ -15,7 +15,7 @@ function DetailPage(match) {
           <Appheader />
         </Header>
         <Content>
-          <ProductDetail product={product} />
+          <ProductDetail product={choseproduct} />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />
