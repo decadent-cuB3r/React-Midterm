@@ -1,9 +1,18 @@
 import { Row, Col } from "antd";
 import { Link } from "react-router-dom";
-import ProductImage from "./ProcessItem";
 import arrow from "../images/right-arrow.png";
+import Slider from "react-slick";
+import React, { Component } from "react";
 
-export default function Process({ products }) {
+export default function extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
   return (
     <div className="process-layout">
       <div className="process-intro">

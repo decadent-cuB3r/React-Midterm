@@ -1,68 +1,10 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* sm */
-
-@media (min-width: 576px) {
-    .container {
-        width: 540px;
-    }
-}
-
-
-/* md */
-
-@media (min-width: 768px) {
-    .container {
-        width: 720px;
-    }
-}
-
-
-/* lg */
-
-@media (min-width: 992px) {
-    .container {
-        width: 960px;
-    }
-}
-
-
-/* xl */
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-}
-
-
-/* xxl */
-
-@media (min-width: 1600px) {
-    .container {
-        width: 1500px;
-    }
-}
-
-
-/* RWD Container */
-
-.container {
-    width: 100%;
-    display: flex;
-    align-self: center;
-    margin: auto;
-}
-
-
 /*General*/
 
 
-/* .container {
-    width: 100%;
-    display: flex;
-} */
+/* RWD Container */
 
 body {
     font-size: 16px;
@@ -151,7 +93,7 @@ body {
 }
 
 .carousel-self {
-    transform: scale(0.7);
+    transform: scale(0.8);
     z-index: 12;
 }
 
@@ -164,30 +106,40 @@ body {
     top: 250px;
 }
 
+.carousel-img {
+    max-width: 100%;
+}
+
 
 /*about*/
 
 .layout-about {
-    height: 420px;
+    height: auto;
     display: flex;
-}
-
-.about-img {
-    width: 547px;
-    height: 355px;
-    margin-left: 40%;
+    flex-flow: row wrap;
 }
 
 .about-sider {
+    display: flex;
     height: 420px;
     width: 50%;
     background-color: #fff;
     line-height: 390px;
+    max-width: 100%;
+}
+
+.about-img {
+    height: 355px;
+    max-width: 100%;
+    margin-left: 40%;
+    margin-top: 2%;
 }
 
 .about-content {
     width: 50%;
     background-color: #fff;
+    max-width: 100%;
+    display: flex;
 }
 
 .about-content-text {
@@ -197,10 +149,11 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-align: justify;
-    width: 550px;
+    width: 580px;
     height: 154px;
     padding-top: 1%;
     margin-left: 5%;
+    max-width: 91%;
 }
 
 .about-content-block {
@@ -209,6 +162,7 @@ body {
     width: 98%;
     margin-top: 2%;
     height: 355px;
+    max-width: 100%;
 }
 
 .about-content-title {
@@ -229,6 +183,7 @@ body {
     border: 2px solid #FFB524;
     width: 550px;
     margin-left: 5%;
+    max-width: 85%;
 }
 
 .about-content-btn {
@@ -275,12 +230,13 @@ body {
     margin-bottom: 2%;
 }
 
-.intro-image {
+
+/* .intro-image {
     display: flex;
     width: 95%;
     justify-content: center;
     padding-left: 5%;
-}
+} */
 
 .process-image {
     padding: 0%;
@@ -458,4 +414,119 @@ body {
     color: #fff;
     font-weight: bold;
     text-align: center;
+}
+
+
+/* xxl */
+
+@media screen and (max-width: 1600px) {
+    .container {
+        width: 1500px;
+    }
+    .about-img {
+        max-width: 100%;
+        margin: auto;
+    }
+    .about-sider {
+        width: 50%;
+    }
+    .about-content {
+        width: 50%;
+        padding-top: 1.5%;
+    }
+    .about-content-btn {
+        margin-left: 55%;
+        margin-top: 8%;
+    }
+}
+
+
+/* xl */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .about-img {
+        margin: auto;
+    }
+    .about-sider {
+        width: 50%;
+    }
+    .about-content {
+        width: 50%;
+    }
+    .about-content-btn {
+        margin-left: 55%;
+        margin-top: 13%;
+    }
+}
+
+
+/* lg */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-sider {
+        width: 100%;
+    }
+    .about-content-block {
+        width: auto;
+        justify-content: center;
+        margin: auto;
+    }
+    .about-content-btn {
+        margin-left: 55%;
+        margin-top: 8%;
+    }
+}
+
+
+/* md */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-sider {
+        width: 100%;
+    }
+    .carousel-self-size {
+        transform: scale(1.25);
+    }
+    .about-content-btn {
+        margin-left: 55%;
+        margin-top: 8%;
+    }
+}
+
+
+/* sm */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 540px;
+    }
+    .carousel-self-size {
+        transform: scale(1.25);
+    }
+    .about-content-btn {
+        margin-left: 55%;
+        margin-top: 12%;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin: auto;
 }
