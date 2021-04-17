@@ -460,6 +460,45 @@ body {
     margin-left: 65%;
 }
 
+/* productdetail */
+
+.product-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.product-name{
+    width: auto;
+    text-align: center;
+    background-color: #FFB524;
+}
+.product-description--border{
+    border: #FFB524 3px solid;
+    width: auto;
+    position: relative;
+}
+.product-description{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product-price-wrap{
+    display: flex;
+}
+
+.Tabledetail{
+    margin-right: auto;
+    margin-left: auto;
+}
+.Tabledetail-img{
+    width: 100%;
+    height: auto;
+}
 
 /*footer*/
 

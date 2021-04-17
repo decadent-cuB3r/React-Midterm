@@ -25,7 +25,8 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": true
   },
   {
     "id": "IuFGYl",
@@ -54,7 +55,8 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "countInStock": 6
+    "countInStock": 6,
+    "isTable": true
   },
   {
     "id": "VfcByl",
@@ -83,7 +85,8 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "countInStock": 4
+    "countInStock": 4,
+    "isTable": true
   },
   {
     "id": "1yF2Ib",
@@ -112,7 +115,8 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "countInStock": 5
+    "countInStock": 5,
+    "isTable": true
   },
   {
     "id": "x5m8g3",
@@ -140,7 +144,8 @@
       "面交/自取 - 免運費",
       "五吉宅急便 - 免運費"
     ],
-    "countInStock": 2
+    "countInStock": 2,
+    "isTable": true
   },
   {
     "id": "tb2Jd1",
@@ -149,7 +154,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/top_100p_2.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "djhksd",
@@ -158,7 +164,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/amtr_m.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "2nfe8e",
@@ -167,7 +174,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/m_g6ru.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "8wnrfi",
@@ -176,7 +184,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/m_d83_f.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 0,
+    "isTable": false
   },
   {
     "id": "cnejk8",
@@ -185,7 +194,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/m_red_f.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "Kn4Et1",
@@ -194,7 +204,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-261B.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 0,
+    "isTable": false
   },
   {
     "id": "lYGFuI",
@@ -203,7 +214,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/m_duncan_1.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "lyBcfV",
@@ -212,7 +224,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-1-3B.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "bI2Fy1",
@@ -221,7 +234,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-132B.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "3g8m5x",
@@ -230,7 +244,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/mahjong-G601B.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 0,
+    "isTable": false
   },
   {
     "id": "opdsf8",
@@ -239,7 +254,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/casino1-2B.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "42f98s",
@@ -248,7 +264,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/1RX-33-1-m.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "39cn3d",
@@ -257,7 +274,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/pokos_m.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "idhdo3",
@@ -266,7 +284,8 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/casino3-8B.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   },
   {
     "id": "qbuw38",
@@ -275,6 +294,7 @@
     "image": "https://www.eastking.com.tw/upload/peripheral/dealer-2_m.jpg",
     "description": [""],
     "description_payment": [""],
-    "countInStock": 3
+    "countInStock": 3,
+    "isTable": false
   }
 ]
