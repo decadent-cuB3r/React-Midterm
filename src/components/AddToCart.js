@@ -3,7 +3,7 @@ import { Button, notification } from "antd";
 const openNotification = () => {
     notification.open({
       message: "購物車通知",
-      description: "一台麻將桌到府安裝！",
+      description: "一台電動麻將桌到府安裝！",
       onClick: () => {
         console.log("Notification Clicked!");
       },

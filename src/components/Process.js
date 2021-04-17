@@ -55,27 +55,27 @@ export default class MultipleItems extends Component {
           <div className="slick">
             <Slider {...settings}>
               <div>
-                <Link to="/">
+                <Link to="/product">
                   <img className="intro-img" src={desk1}></img>
                 </Link>
               </div>
               <div>
-                <Link to="/">
+                <Link to="/product">
                   <img className="intro-img" src={desk2}></img>
                 </Link>
               </div>
               <div>
-                <Link to="/">
+                <Link to="/product">
                   <img className="intro-img" src={desk3}></img>
                 </Link>
               </div>
               <div>
-                <Link to="/">
+                <Link to="/product">
                   <img className="intro-img" src={desk4}></img>
                 </Link>
               </div>
               <div>
-                <Link to="/">
+                <Link to="/product">
                   <img className="intro-img" src={desk5}></img>
                 </Link>
               </div>

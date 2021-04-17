@@ -516,6 +516,7 @@ body {
 
 .product-price-wrap {
     display: flex;
+    justify-content: space-between;
 }
 
 .Tabledetail {
