@@ -3,6 +3,7 @@ import logo from "../images/logo.png"
 import cart from "../images/cart.png"
 import fb from "../images/fb.png"
 import line from "../images/line.png"
+import Drawer from "./drawer"
 
 export default function header(){
     return(
@@ -21,15 +22,16 @@ export default function header(){
                     <Link to className="header-nav-text">聯絡我們<br />Contect</Link>
                 </div>
                 <div className="header-icon">
-                    <Link to ="/">
-                        <img className="icon-img" src={cart} alt="icon" />
-                    </Link>
-                    <Link to ="/">
-                        <img className="icon-img" src={fb} alt="icon" />
-                    </Link>
-                    <Link to ="/">
+                    <Link className="icon-img-link" to ="/">
                         <img className="icon-img" src={line} alt="icon" />
                     </Link>
+                    <Link className="icon-img-link" to ="/">
+                        <img className="icon-img" src={fb} alt="icon" />
+                    </Link>
+                    <Link className="icon-img-link" to ="/">
+                        <img className="icon-img" src={cart} alt="icon" />
+                    </Link>
+                    <Drawer />
                 </div>
             </header>
         </div>

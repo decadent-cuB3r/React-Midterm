@@ -33,8 +33,10 @@ body {
 
 .header-wrap {
     display: flex;
-    width: 1198px;
+    width: 60%;
     margin: auto;
+    max-width: 100%;
+    height: 100%;
 }
 
 .header-logo,
@@ -46,6 +48,12 @@ body {
 .logo-img {
     width: 145px;
     height: 98px;
+}
+
+.icon-img-link {
+    width: 42px;
+    height: 42px;
+    margin-right: 10%;
 }
 
 .icon-img {
@@ -60,13 +68,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-right: 200px;
 }
 
 .header-icon {
     display: flex;
-    width: 180px;
+    width: 15%;
+    max-width: 100%;
     justify-content: space-around;
+    margin-left: 10%;
 }
 
 .header-nav-text {
@@ -566,6 +575,15 @@ body {
     .location-btn {
         margin-top: 0%;
     }
+    .header-nav {
+        margin-right: 2%;
+    }
+    .header-nav-text {
+        display: none;
+    }
+    .header-wrap {
+        width: 80%;
+    }
 }
 
 
@@ -604,6 +622,17 @@ body {
         width: auto;
         justify-content: center;
     }
+    .header-logo {
+        width: 80%;
+        line-height: 90px;
+    }
+    .layout-header {
+        height: 90px;
+    }
+    .logo-img {
+        width: 120px;
+        height: 80px;
+    }
 }
 
 
@@ -625,6 +654,10 @@ body {
     .about-content-btn {
         margin-left: 55%;
         margin-top: 8%;
+    }
+    .icon-img {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -652,6 +685,12 @@ body {
     }
     .block-circle {
         margin-top: 2%;
+    }
+    .header-wrap {
+        width: 90%;
+    }
+    .icon-img {
+        margin-bottom: 20%;
     }
 }
 
