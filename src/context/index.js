@@ -1,9 +1,19 @@
 import { createContext } from "react";
 import useReducerWithThunk from "use-reducer-thunk";
 import products from "../json/products.json";
-import { SET_PRODUCT_ITEMS, SET_NAVBAR_ACTIVEITEM } from "../utils/constants";
+import {
+  SET_PRODUCT_ITEMS,
+  SET_NAVBAR_ACTIVEITEM,
+  CART_ITEM_ADD,
+  CART_ITEM_REMOVE,
+} from "../utils/constants";
 
 export const StoreContext = createContext();
+
+let cartItems = localStorage.getItem("cartItems")
+  ? JSON.parse(localStorage.getItem("cartItems"))
+  : [];
+
 const initialState = {
   page: {
     products,
@@ -11,6 +21,7 @@ const initialState = {
   navBar: {
     activeItem: "/",
   },
+  cartItems,
 };
 
 function reducer(state, action) {
@@ -31,6 +42,20 @@ function reducer(state, action) {
           activeItem: action.payload,
         },
       };
+    case CART_ITEM_ADD:
+      const item = action.payload;
+      const product = state.cartItems.find((x) => x.id === item.id);
+      if (product) {
+        cartItems = state.cartItems.map((x) =>
+          x.id === product.id ? item : x
+        );
+        return { ...state, cartItems };
+      }
+      cartItems = [...state.cartItems, item];
+      return { ...state, cartItems };
+    case CART_ITEM_REMOVE:
+      cartItems = state.cartItems.filter((x) => x.id !== action.payload);
+      return { ...state, cartItems };
     default:
       return state;
   }

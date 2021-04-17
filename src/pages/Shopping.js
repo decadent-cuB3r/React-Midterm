@@ -1,10 +1,7 @@
 import { Layout } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
-import AppSlide from "../components/Carousel";
-import AppAbout from "../components/About";
-import MultipleItems from "../components/Process";
-import Location from "../components/Location";
+import ShoppingDetail from "../components/ShoppingBag";
 
 const { Header, Content, Footer } = Layout;
 
@@ -16,10 +13,7 @@ function Home() {
           <Appheader />
         </Header>
         <Content>
-          <AppSlide />
-          <AppAbout />
-          <MultipleItems />
-          <Location />
+          <ShoppingDetail />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />
