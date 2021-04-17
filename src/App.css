@@ -236,41 +236,60 @@ body {
 
 /* productlist */
 
+.productlist-container {
+    background-color: #fff;
+}
+
 .productlist {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
 }
 
-.productlist-title::after {
-    content: " ";
-    position: absolute;
-    border-bottom: solid black 4px;
+.productlist-title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: auto;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 .productlist-NavBar {
+    width: 50%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    max-width: 100%;
 }
 
 .productlist-NavBarItem {
     color: #828282;
-    width: 200px;
+    width: 120%;
+    height: 100%;
     text-align: center;
-    line-height: 48px;
+    line-height: 69px;
+    font-size: 22px;
 }
 
 .productlist-NavBarItem:hover {
     transition: 0.3s;
-    color: #828282;
-    height: 48px;
-    width: 200px;
+    color: #fff;
+    width: 120%;
     background-color: #8BB98D;
+    border-radius: 30px;
 }
 
 .productlist-NavBarItem--active {
     background-color: #8BB98D;
+    color: #fff;
     border-radius: 30px;
+}
+
+.product-block {
+    background-color: #fff;
 }
 
 
@@ -659,6 +678,9 @@ body {
     .ham-btn {
         display: block;
     }
+    .productlist-NavBarItem {
+        font-size: 18px;
+    }
 }
 
 
@@ -713,6 +735,9 @@ body {
     }
     .header-nav {
         width: 20%;
+    }
+    .productlist-NavBar {
+        width: 60%;
     }
 }
 
@@ -772,6 +797,12 @@ body {
     }
     .icon-img {
         margin-bottom: 20%;
+    }
+    .productlist-NavBar {
+        width: 85%;
+    }
+    .productlist-NavBarItem {
+        font-size: 16px;
     }
 }
 

@@ -2,6 +2,7 @@ import { Row, Col } from "antd";
 import ProductItem from "./ProductItem";
 import dice from "../images/dice.png";
 import NavItem from "./NavItem";
+import Menu from "./productMenu"
 
 export default function ProductList({ products }) {
   return (
@@ -43,7 +44,7 @@ export default function ProductList({ products }) {
           </NavItem>
         </div>
       </div>
-      <Row gutter={[32, 32]}>
+      <Row  className="product-block" gutter={[32, 32]}>
         {products.map((product) => (
           <Col
             key={product.id}
@@ -56,6 +57,7 @@ export default function ProductList({ products }) {
           </Col>
         ))}
       </Row>
+      
     </div>
   );
 }
