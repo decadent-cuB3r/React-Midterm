@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col } from "antd";
 import { Select, Descriptions, Empty } from "antd";
-import AddToCart from "./AddToCart";
+import AddToCartComplex from "./AddToCartComplex";
 import Previous from "./previousPage";
 import TableDetailImg from "./TableDetailImg";
 
@@ -47,7 +47,7 @@ function ProductDetail({ product }) {
                 商品囤貨: {product.countInStock > 0 ? "尚有存貨" : "已售罄"}
               </p>
               <div className="product-qty">
-                Qty:
+                數量:
                 <Select
                   defaultValue={qty}
                   className="select-style"
@@ -60,9 +60,9 @@ function ProductDetail({ product }) {
                   ))}
                 </Select>
               </div>
-              <p className="product-qty">Total Price: ${product.price * qty}</p>
+              <p className="product-qty">總價: ${product.price * qty}</p>
             </div>
-            <AddToCart />
+            <AddToCartComplex product={product} qty={qty} />
           </div>
         </Col>
       </Row>

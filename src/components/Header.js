@@ -18,7 +18,7 @@ export default function header(){
                     <Link to="/product" className="header-nav-text">產品資訊<br />Product</Link>
                     <Link to className="header-nav-text">最新消息<br />News</Link>
                     <Link to className="header-nav-text">客戶須知<br />Annouce</Link>
-                    <Link to className="header-nav-text">聯絡我們<br />Contect</Link>
+                    <Link to className="header-nav-text">聯絡我們<br />Contact</Link>
                 </div>
                 <div className="header-icon">
                     <Link to ="/">
