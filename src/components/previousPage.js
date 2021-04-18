@@ -8,7 +8,7 @@ export default function PreviousButton() {
   };
   return (
     <div className="previous-button">
-      <Button onClick={goToPreviousPath}>回上頁</Button>
+      <Button className="btn-color" onClick={goToPreviousPath}>回上頁</Button>
     </div>
   );
 }

@@ -28,6 +28,11 @@ body {
     padding: 0%;
 }
 
+.detail-layout {
+    background-color: #fff;
+    padding-top: 2%;
+}
+
 
 /*Header*/
 
@@ -73,7 +78,7 @@ body {
     width: 10%;
     max-width: 100%;
     justify-content: space-around;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .header-nav-text {
@@ -515,6 +520,8 @@ body {
 }
 
 .product-name {
+    font-size: 22px;
+    font-weight: bolder;
     width: auto;
     text-align: center;
     background-color: #FFB524;
@@ -536,6 +543,11 @@ body {
 .product-price-wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap row;
+}
+
+.product-qty {
+    margin-bottom: 4%;
 }
 
 .Tabledetail {
@@ -545,7 +557,21 @@ body {
 
 .Tabledetail-img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+.detail-payment {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.price-row {
+    width: 100%;
+}
+
+.productdetail-intro {
+    max-width: 100%;
 }
 
 
@@ -838,24 +864,26 @@ body {
     margin: auto;
 }
 
+
 /* Cart */
+
 .cart-summary-text {
     color: white;
     font-size: 0.8rem;
     opacity: 0.6;
     margin-top: -4px;
-  }
-  
-  .ant-modal-title {
+}
+
+.ant-modal-title {
     font-weight: lighter;
     font-size: 1.7rem;
-  }
-  
-  .ant-modal-body {
+}
+
+.ant-modal-body {
     font-size: 1rem;
-  }
-  
-  .cart-modal-btn {
+}
+
+.cart-modal-btn {
     width: 100%;
     font-size: 1.1rem;
     font-weight: lighter;
@@ -865,50 +893,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .cart-item {
+}
+
+.cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: .1rem #c0c0c0 solid;
-  }
-  
-  .cart-image img{
+}
+
+.cart-image img {
     max-width: 4rem;
     max-height: 4rem;
     flex: 1 1;
-  }
-  
-  .cart-item-content {
+}
+
+.cart-item-content {
     margin-left: 2rem;
     flex: 8 1;
-  }
-  
-  .cart-price {
+}
+
+.cart-price {
     font-size: 1rem;
     font-weight: bold;
     text-align: right;
-  }
-  
-  .cart-item-delete {
+}
+
+.cart-item-delete {
     font-size: 1.2rem;
     opacity: 0.6;
     text-align: right;
     cursor: pointer;
-  }
-  
-  .cart-total-price-wrap {display: flex; justify-content: space-between;}
-  .cart-total-price {
+}
+
+.cart-total-price-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total-price {
     font-weight: bold;
     text-align: right;
-  }
-  
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .cart-summary-text {
-      display: none;
+        display: none;
     }
-  } 
+}
