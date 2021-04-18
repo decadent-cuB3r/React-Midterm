@@ -12,7 +12,7 @@ const openNotification = () => {
 
 export default function AddToCart(){
     return (
-        <Button type="default" onClick={openNotification}>
+        <Button type="default" className="btn-color" onClick={openNotification}>
           加入購物車
         </Button>
     );

@@ -549,6 +549,31 @@ body {
 }
 
 
+/*produt detail*/
+
+.productItem-functions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.btn-color:hover {
+    color: #8BB98D;
+    border: #8BB98D 1px;
+    transition: 0.1s;
+}
+
+.btn-color:hover {
+    color: #8BB98D;
+    border: #8BB98D 1px solid;
+    transition: 0.1s;
+}
+
+.text-gray {
+    font-size: 20px;
+}
+
+
 /*footer*/
 
 .bg-yellow {

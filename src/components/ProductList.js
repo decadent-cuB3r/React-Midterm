@@ -2,7 +2,6 @@ import { Row, Col } from "antd";
 import ProductItem from "./ProductItem";
 import dice from "../images/dice.png";
 import NavItem from "./NavItem";
-import Menu from "./productMenu"
 
 export default function ProductList({ products }) {
   return (
