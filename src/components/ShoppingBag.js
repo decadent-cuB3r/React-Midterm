@@ -1,9 +1,11 @@
 import { useEffect, useContext } from "react";
-import { Link } from "react-router-dom"
-import { Col, Row, Button, Select, Empty } from "antd";
+import { Link } from "react-router-dom";
+import { Col, Row, Button, Select, Empty, Steps } from "antd";
 import { StoreContext } from "../context";
 import { cartItemAdd, cartItemRemove } from "../actions";
-const{ Option } = Select;
+
+const { Option } = Select;
+const { Step } = Steps;
 
 export default function ShoppingDetail() {
   const {
@@ -23,11 +25,28 @@ export default function ShoppingDetail() {
 
   return (
     <>
+      <Steps current={1}>
+        <Step
+          title="準備結帳"
+          subTitle=""
+        />
+        <Step
+          title="填寫資料"
+          subTitle=""
+          description="This is a description."
+        />
+        <Step
+          title="In Progress"
+          subTitle="Left 00:00:08"
+          description="This is a description."
+        />
+      </Steps>
+      <div className="shoppingbag-text bg-yellow">購物清單</div>
       {cartItems.length === 0 ? (
-        <Empty />
+        <Empty image="https://fireplace.tw/wp-content/themes/mrtailor/images/empty_cart_retina.png" description="請你去買一張電動桌" />
       ) : (
         cartItems.map((item) => (
-          <li key={item.id} className="cart-item">
+          <li key={item.id} className="shoppingbag-item">
             <Link to={`/product/${item.id}`}>
               <div className="cart-image">
                 <img src={item.image} alt={item.name} />
@@ -50,10 +69,10 @@ export default function ShoppingDetail() {
                 </Select>
               </div>
             </div>
-            <div className="cart-item-end">
-              <div className="cart-price">${item.price * item.qty}</div>
+            <div className="shoppingbag-item-end">
+              <div className="shoppingbag-price">${item.price * item.qty}</div>
               <div
-                className="cart-item-delete"
+                className="shoppingbag-item-delete"
                 onClick={() => cartItemRemove(dispatch, item.id)}
               >
                 x
@@ -62,11 +81,11 @@ export default function ShoppingDetail() {
           </li>
         ))
       )}
-      <div className="cart-total-price-wrap">
+      <div className="shoppingbag-total-price-wrap">
         Total
-        <div className="cart-total-price">${getTotalPrice()}</div>
+        <div className="shoppingbag-total-price">${getTotalPrice()}</div>
       </div>
-      <Button className="cart-modal-btn" type="primary">
+      <Button className="shoppingbag-modal-btn" type="primary">
         <span style={{ marginLeft: 12 }}>Start Checkout</span>
       </Button>
     </>

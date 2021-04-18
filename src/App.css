@@ -1,7 +1,11 @@
-@import '~antd/dist/antd.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*General*/
+
+.bg-yellow {
+    background-color: #ffd976;
+}
 
 
 /* RWD Container */
@@ -83,7 +87,7 @@ body {
 
 .header-nav-text {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: bold;
@@ -91,7 +95,7 @@ body {
 }
 
 .header-nav-text:hover {
-    color: #FFB800;
+    color: #ffb800;
 }
 
 .header-ham-text {
@@ -104,12 +108,12 @@ body {
 
 .header-ham-text:hover {
     color: #fff;
-    background-color: #FFB800;
+    background-color: #ffb800;
     transition: 0.2s;
 }
 
 .ham-btn {
-    background-color: #FFB800;
+    background-color: #ffb800;
     border: #fff;
     margin: auto;
     display: none;
@@ -135,7 +139,7 @@ body {
 }
 
 .carousel-block-yellow {
-    background-color: #FFD976;
+    background-color: #ffd976;
     position: absolute;
     width: 100%;
     height: 400px;
@@ -180,7 +184,7 @@ body {
 }
 
 .about-content-text {
-    background: #FFFAEC;
+    background: #fffaec;
     margin: auto;
     font-weight: bold;
     font-size: 20px;
@@ -194,7 +198,7 @@ body {
 }
 
 .about-content-block {
-    background-color: #FFFAEC;
+    background-color: #fffaec;
     margin-left: 2%;
     width: 98%;
     margin-top: 2%;
@@ -213,11 +217,11 @@ body {
 }
 
 .title-color {
-    color: #FFB800;
+    color: #ffb800;
 }
 
 .about-content-line {
-    border: 2px solid #FFB524;
+    border: 2px solid #ffb524;
     width: 550px;
     margin-left: 5%;
     max-width: 85%;
@@ -226,7 +230,7 @@ body {
 .about-content-btn {
     width: 150px;
     height: 40px;
-    background: #FFD976;
+    background: #ffd976;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     margin-left: 45%;
@@ -283,12 +287,12 @@ body {
     transition: 0.3s;
     color: #fff;
     width: 120%;
-    background-color: #8BB98D;
+    background-color: #8bb98d;
     border-radius: 30px;
 }
 
 .productlist-NavBarItem--active {
-    background-color: #8BB98D;
+    background-color: #8bb98d;
     color: #fff;
     border-radius: 30px;
 }
@@ -301,7 +305,7 @@ body {
 /*process*/
 
 .process-layout {
-    background-color: #FFD976;
+    background-color: #ffd976;
 }
 
 .process-intro {
@@ -315,11 +319,11 @@ body {
     padding-top: 1%;
     line-height: 50px;
     text-align: center;
-    color: #FFFAEC;
+    color: #fffaec;
 }
 
 .process-line {
-    border: 2px solid #FFFAEC;
+    border: 2px solid #fffaec;
     text-align: center;
     width: 212px;
     margin-top: 1%;
@@ -347,7 +351,7 @@ body {
 
 .process-order {
     height: 350px;
-    background: #FFB800;
+    background: #ffb800;
 }
 
 .process-arrow-between {
@@ -355,7 +359,7 @@ body {
     height: 30spx;
     border-style: solid;
     border-width: 30px 100px 0 100px;
-    border-color: #FFD976 transparent transparent transparent;
+    border-color: #ffd976 transparent transparent transparent;
     margin: auto;
 }
 
@@ -376,11 +380,11 @@ body {
     width: 126px;
     height: 126px;
     border-radius: 999em;
-    background: #FDEFC7;
+    background: #fdefc7;
     font-weight: bold;
     font-size: 72px;
     line-height: 115px;
-    color: #FFB800;
+    color: #ffb800;
     text-align: center;
 }
 
@@ -404,7 +408,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: bolder;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     margin-top: 5%;
 }
@@ -412,10 +416,10 @@ body {
 .order-btn {
     width: 264px;
     height: 49px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    color: #FFB800;
+    color: #ffb800;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -492,13 +496,13 @@ body {
 }
 
 .location-btn {
-    background: #FFFFFF;
-    border: 3px solid #FFB800;
+    background: #ffffff;
+    border: 3px solid #ffb800;
     box-sizing: border-box;
     border-radius: 30px;
     width: 150px;
     height: 40px;
-    color: #FFB800;
+    color: #ffb800;
     font-size: 18px;
     line-height: 35px;
     text-align: center;
@@ -528,7 +532,7 @@ body {
 }
 
 .product-description--border {
-    border: #FFB524 3px solid;
+    border: #ffb524 3px solid;
     width: auto;
     position: relative;
 }
@@ -548,6 +552,8 @@ body {
 
 .product-qty {
     margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Tabledetail {
@@ -557,7 +563,6 @@ body {
 
 .Tabledetail-img {
     width: 100%;
-    max-width: 100%;
     height: auto;
 }
 
@@ -602,8 +607,7 @@ body {
 
 /*footer*/
 
-.bg-yellow {
-    background-color: #FFD976;
+.footer {
     height: 102px;
     width: 100%;
     padding-top: 2px;
@@ -613,7 +617,7 @@ body {
     width: 100px;
     height: 0px;
     margin-top: 38px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     line-height: 102px;
 }
 
@@ -874,34 +878,13 @@ body {
     margin-top: -4px;
 }
 
-.ant-modal-title {
-    font-weight: lighter;
-    font-size: 1.7rem;
-}
-
-.ant-modal-body {
-    font-size: 1rem;
-}
-
-.cart-modal-btn {
-    width: 100%;
-    font-size: 1.1rem;
-    font-weight: lighter;
-    padding: 0.7rem;
-    height: auto;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: .1rem #c0c0c0 solid;
+    border-bottom: 0.1rem #c0c0c0 solid;
 }
 
 .cart-image img {
