@@ -63,8 +63,8 @@ export default function Header() {
           <Link className="icon-img-link" to="/shoppingbag">
             <Badge
               count={count}
-              size={"small"}
-              style={{ color: "white", backgroundColor: "#6366F2" }}
+              size={"default"}
+              style={{ color: "white", backgroundColor: "red" }}
             >
               <img className="icon-img" src={cart} alt="icon" />
             </Badge>

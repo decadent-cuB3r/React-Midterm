@@ -21,7 +21,6 @@ function ProductDetail({ product }) {
       <Row gutter={[32, 32]}>
         <Col lg={{ span: 8, offset: 4 }} md={{ span: 6 }}>
           <img alt="" className="product-image" src={img} />
-
           <Descriptions title="購買資訊">
             <Descriptions.Item label={product.description_payment[0]}>
               {product.description_payment[1]}, {product.description_payment[2]}

@@ -24,38 +24,41 @@ export default function ShoppingDetail() {
   }, [cartItems]);
 
   return (
-    <>
-      <Steps current={1}>
+    <div className="shoppingbag">
+      <Steps className="shoppingbag-steps" current={1}>
+        <Step className="shoppingbag-step" title="選購品項" />
+        <Step className="shoppingbag-step" title="準備結帳" subTitle="" />
         <Step
-          title="準備結帳"
-          subTitle=""
-        />
-        <Step
+          className="shoppingbag-step"
           title="填寫資料"
           subTitle=""
-          description="This is a description."
+          description=""
         />
         <Step
-          title="In Progress"
-          subTitle="Left 00:00:08"
-          description="This is a description."
+          className="shoppingbag-step"
+          title="完成訂購"
+          subTitle=""
+          description=""
         />
       </Steps>
       <div className="shoppingbag-text bg-yellow">購物清單</div>
       {cartItems.length === 0 ? (
-        <Empty image="https://fireplace.tw/wp-content/themes/mrtailor/images/empty_cart_retina.png" description="請你去買一張電動桌" />
+        <Empty
+          image="https://fireplace.tw/wp-content/themes/mrtailor/images/empty_cart_retina.png"
+          description="請你去買一張電動桌"
+        />
       ) : (
         cartItems.map((item) => (
           <li key={item.id} className="shoppingbag-item">
             <Link to={`/product/${item.id}`}>
-              <div className="cart-image">
+              <div className="shoppingbag-image">
                 <img src={item.image} alt={item.name} />
               </div>
             </Link>
-            <div className="cart-item-content">
-              <div className="cart-name">{item.name}</div>
+            <div className="shoppingbag-item-content">
+              <div className="shoppingbag-name">{item.name}</div>
               <div className="product-qty">
-                Qty: {"   "}
+                數量:{" "}
                 <Select
                   defaultValue={item.qty}
                   className="select-style"
@@ -69,25 +72,27 @@ export default function ShoppingDetail() {
                 </Select>
               </div>
             </div>
-            <div className="shoppingbag-item-end">
+            <div>
               <div className="shoppingbag-price">${item.price * item.qty}</div>
               <div
                 className="shoppingbag-item-delete"
                 onClick={() => cartItemRemove(dispatch, item.id)}
               >
-                x
+                <img src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png" alt="remove" />
               </div>
             </div>
           </li>
         ))
       )}
+      <div className="bg-yellow shoppingbag-shipping">送貨方式</div>
+
       <div className="shoppingbag-total-price-wrap">
-        Total
+        <div>合計</div>
         <div className="shoppingbag-total-price">${getTotalPrice()}</div>
       </div>
-      <Button className="shoppingbag-modal-btn" type="primary">
+      <Button className="shoppingbag-checkout-btn">
         <span style={{ marginLeft: 12 }}>Start Checkout</span>
       </Button>
-    </>
+    </div>
   );
 }
