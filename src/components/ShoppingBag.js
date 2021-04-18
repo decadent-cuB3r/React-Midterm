@@ -1,6 +1,6 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { Col, Row, Button, Select, Empty, Steps } from "antd";
+import { Col, Row, Button, Select, Empty, Steps, Radio } from "antd";
 import { StoreContext } from "../context";
 import { cartItemAdd, cartItemRemove } from "../actions";
 
@@ -22,6 +22,12 @@ export default function ShoppingDetail() {
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
+
+  const [value, setValue] = useState(1);
+  const onChange = (e) => {
+    console.log("radio checked", e.target.value);
+    setValue(e.target.value);
+  };
 
   return (
     <div className="shoppingbag">
@@ -57,7 +63,7 @@ export default function ShoppingDetail() {
             </Link>
             <div className="shoppingbag-item-content">
               <div className="shoppingbag-name">{item.name}</div>
-              <div className="product-qty">
+              <div className="shoppingbag-qty">
                 數量:{" "}
                 <Select
                   defaultValue={item.qty}
@@ -78,21 +84,38 @@ export default function ShoppingDetail() {
                 className="shoppingbag-item-delete"
                 onClick={() => cartItemRemove(dispatch, item.id)}
               >
-                <img src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png" alt="remove" />
+                <img
+                  src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+                  alt="remove"
+                />
               </div>
             </div>
           </li>
         ))
       )}
       <div className="bg-yellow shoppingbag-shipping">送貨方式</div>
-
+      <Radio.Group onChange={onChange} value={value}>
+        <Radio value={1}>面交/自取</Radio>
+        <Radio value={2}>五吉宅急便</Radio>
+      </Radio.Group>
       <div className="shoppingbag-total-price-wrap">
-        <div>合計</div>
+        <div>
+          合計
+          <br />
+          運送方式：{value === 1 ? "面交/自取" : "五吉宅急便"}
+        </div>
         <div className="shoppingbag-total-price">${getTotalPrice()}</div>
       </div>
-      <Button className="shoppingbag-checkout-btn">
-        <span style={{ marginLeft: 12 }}>Start Checkout</span>
-      </Button>
+      <div className="container">
+        <Link to="/product">
+          <Button className="shoppingbag-keepshopping-btn">
+            <span style={{}}>繼續購物</span>
+          </Button>
+        </Link>
+        <Button className="shoppingbag-checkout-btn">
+          <span style={{ marginLeft: 12 }}>Start Checkout</span>
+        </Button>
+      </div>
     </div>
   );
 }
