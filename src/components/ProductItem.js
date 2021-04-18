@@ -13,7 +13,7 @@ export default function ProductItem({ product }) {
         <span className="text-gray">NTD {product.price}</span>
       </div>
       <div className="productItem-functions">
-        <AddToCart />
+        <AddToCart product={product} qty={1} />
         <Link to={`/detail/${product.id}`}>
           <Button className="btn-color" type="ghost">More</Button>
         </Link>
