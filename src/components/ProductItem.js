@@ -15,7 +15,7 @@ export default function ProductItem({ product }) {
       <div className="productItem-functions">
         <AddToCart product={product} qty={1} />
         <Link to={`/detail/${product.id}`}>
-          <Button type="ghost">More</Button>
+          <Button className="btn-color" type="ghost">More</Button>
         </Link>
       </div>
     </Card>
