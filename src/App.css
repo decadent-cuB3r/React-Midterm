@@ -30,6 +30,7 @@ body {
     background-color: #fff;
     height: 102px;
     padding: 0%;
+    padding-top: 2%;
 }
 
 .detail-layout {
@@ -552,17 +553,18 @@ body {
 
 .product-qty {
     margin-bottom: 4%;
-    display: flex;
     justify-content: space-between;
 }
 
-.Tabledetail {
+.TableDetail {
     margin-right: auto;
     margin-left: auto;
+    max-width: 100%;
+    margin-top: 2%;
 }
 
-.Tabledetail-img {
-    width: 100%;
+.TableDetail-img {
+    max-width: 100%;
     height: auto;
 }
 
@@ -948,25 +950,46 @@ body {
 }
 
 .shoppingbag-keepshopping-btn {
-    color: #ffb524;
+    text-align: center;
     background-color: #fff;
-    border: #ffb524;
-    opacity: 0.6;
     width: 100%;
 }
 
 .shoppingbag-checkout-btn {
-    color: #ffb524;
+    text-align: center;
     background-color: #fff;
-    border: #ffb524;
-    opacity: 0.6;
     width: 100%;
 }
 
-.shoppingbag-checkout-btn:hover {
+.shoppingbag-btn-style-1 {
+    border: 0 #fff;
+    width: 100%;
     color: #ffb524;
-    opacity: 1;
+    background-color: #fff;
 }
+
+.shoppingbag-btn-style-1:hover {
+    border: 0 #fff;
+    width: 100%;
+    color: #fff;
+    background-color: #ffb524;
+}
+
+.shoppingbag-btn-style-2 {
+    border: 0 #fff;
+    width: 100%;
+    color: #fff;
+    background-color: #ffb800;
+}
+
+.shoppingbag-btn-style-2:hover {
+    border: 0 #fff;
+    width: 100%;
+    color: #ffb524;
+    background-color: #fff;
+}
+
+.shoppingbag-btn-container {}
 
 @media (max-width: 992px) {
     .shoppingbag-summary-text {

@@ -106,14 +106,14 @@ export default function ShoppingDetail() {
         </div>
         <div className="shoppingbag-total-price">${getTotalPrice()}</div>
       </div>
-      <div className="container">
+      <div className="container shopping-btn-container">
         <Link to="/product"className="shoppingbag-keepshopping-btn">
-          <Button >
+          <Button className="shoppingbag-btn-style-1">
             <span style={{}}>繼續購物</span>
           </Button>
         </Link>
         <Link className="shoppingbag-checkout-btn"to="/">
-          <Button >
+          <Button className="shoppingbag-btn-style-2">
             <span style={{}}>Start Checkout</span>
           </Button>
         </Link>
