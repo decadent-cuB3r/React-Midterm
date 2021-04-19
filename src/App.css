@@ -989,15 +989,15 @@ main {
 .shoppingbag-btn-style-1 {
     border: 0 #fff;
     width: 100%;
-    color: #ffb524;
-    background-color: #fff;
+    color: #fff;
+    background-color: hsl(0, 0%, 20%);
 }
 
 .shoppingbag-btn-style-1:hover {
     border: 0 #fff;
     width: 100%;
-    color: #ffb524;
-    background-color: rgb(243, 243, 243);
+    color: #fff;
+    background-color: rgb(129, 129, 129);
 }
 
 .shoppingbag-btn-style-2 {
