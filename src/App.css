@@ -241,11 +241,11 @@ body {
     font-size: 20px;
     line-height: 40px;
     text-align: center;
+    transition: all 0.5s;
 }
 
 .about-content-btn:hover {
     background: #fdbb12;
-    transition: background-color 0.5s;
     transform: scale(1.1);
 }
 
@@ -434,11 +434,12 @@ body {
     margin: auto;
     margin-top: 1%;
     line-height: 49px;
+    transition: all 0.5s;
 }
 
 .order-btn:hover {
     background-color: rgba(240, 240, 240, 0.966);
-    transition: all 0.5s;
+    transform: scale(1.1);
 }
 
 
@@ -521,12 +522,12 @@ body {
     font-weight: bolder;
     margin-top: 10%;
     margin-left: 65%;
+    transition: all 0.3s;
 }
 
 .location-btn:hover {
     color: #fff;
     background-color: #ffb800;
-    transition: all 0.3s;
 }
 
 
@@ -896,9 +897,14 @@ body {
 
 /* shoppingbag */
 
+main {
+    background-color: #fff;
+}
+
 .shoppingbag {
     width: 70%;
     margin: auto;
+    background-color: #fff;
 }
 
 .shoppingbag-steps {
@@ -990,8 +996,8 @@ body {
 .shoppingbag-btn-style-1:hover {
     border: 0 #fff;
     width: 100%;
-    color: #fff;
-    background-color: #ffb524;
+    color: #ffb524;
+    background-color: rgb(243, 243, 243);
 }
 
 .shoppingbag-btn-style-2 {
@@ -1004,11 +1010,9 @@ body {
 .shoppingbag-btn-style-2:hover {
     border: 0 #fff;
     width: 100%;
-    color: #ffb524;
-    background-color: #fff;
+    color: #fff;
+    background-color: #e9aa0a;
 }
-
-.shoppingbag-btn-container {}
 
 @media (max-width: 992px) {
     .shoppingbag-summary-text {
