@@ -31,7 +31,7 @@ export default function ShoppingDetail() {
 
   return (
     <div className="shoppingbag">
-      <Steps className="shoppingbag-steps" current={1}>
+      <Steps className="shoppingbag-steps" current={0}>
         <Step className="shoppingbag-step" title="選購品項" />
         <Step className="shoppingbag-step" title="準備結帳" subTitle="" />
         <Step
@@ -107,14 +107,16 @@ export default function ShoppingDetail() {
         <div className="shoppingbag-total-price">${getTotalPrice()}</div>
       </div>
       <div className="container">
-        <Link to="/product">
-          <Button className="shoppingbag-keepshopping-btn">
+        <Link to="/product"className="shoppingbag-keepshopping-btn">
+          <Button >
             <span style={{}}>繼續購物</span>
           </Button>
         </Link>
-        <Button className="shoppingbag-checkout-btn">
-          <span style={{ marginLeft: 12 }}>Start Checkout</span>
-        </Button>
+        <Link className="shoppingbag-checkout-btn"to="/">
+          <Button >
+            <span style={{}}>Start Checkout</span>
+          </Button>
+        </Link>
       </div>
     </div>
   );
