@@ -1,21 +1,20 @@
 import { Layout, BackTop } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
-import ProductDetail from "../components/ProductDetail";
-import products from "../json/products.json";
+import CompareDetail from "../components/CompareDetail"
+import products from "../json/products.json"
 
 const { Header, Content, Footer } = Layout;
 
-function DetailPage({match}) {
-  const choseproduct = products.find((x) => x.id === match.params.productId);
+function Compare() {
   return (
-    <Layout className="container main-layout">
+    <Layout className="container">
       <Layout>
         <Header className="layout-header">
           <Appheader />
         </Header>
         <Content>
-          <ProductDetail product={choseproduct} />
+            <CompareDetail products={products} />
         </Content>
         <Footer className="layout-footer">
           <AppFooter />
@@ -26,4 +25,4 @@ function DetailPage({match}) {
   );
 }
 
-export default DetailPage;
+export default Compare;

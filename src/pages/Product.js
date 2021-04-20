@@ -1,4 +1,4 @@
-import { Layout } from "antd";
+import { Layout, BackTop } from "antd";
 import { useContext } from "react";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
@@ -25,6 +25,7 @@ function Product() {
           <AppFooter />
         </Footer>
       </Layout>
+      <BackTop />
     </Layout>
   );
 }

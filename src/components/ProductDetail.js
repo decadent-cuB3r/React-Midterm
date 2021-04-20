@@ -19,14 +19,14 @@ function ProductDetail({ product }) {
   return (
     <div className="detail-layout">
       <Row lg={{ span: 1 }} align="bottom">
-        <Col lg={{ span: 16, offset: 4 }}xs={{ span: 21, offset: 1 }}>
+        <Col lg={{ span: 16, offset: 4 }} xs={{ span: 21, offset: 1 }}>
           <DemoBox value={100}>
             <Previous />
           </DemoBox>
         </Col>
       </Row>
       <Row wrap gutter={[32, 32]}>
-        <Col lg={{ span: 8, offset: 4 }}xs={{ span: 21, offset: 1 }}>
+        <Col lg={{ span: 8, offset: 4 }} xs={{ span: 21, offset: 1 }}>
           <img alt="" className="product-image" src={img} />
 
           <Descriptions className="detail-payment" title="購買資訊">
@@ -38,7 +38,7 @@ function ProductDetail({ product }) {
             </Descriptions.Item>
           </Descriptions>
         </Col>
-        <Col lg={{ span: 8, offset: 1 }}xs={{ span: 21, offset: 1 }}>
+        <Col lg={{ span: 8, offset: 1 }} xs={{ span: 21, offset: 1 }}>
           <div className="productdetail-intro">
             <h1 className="product-name product-name--large">{product.name}</h1>
             <p className="product-description--border">
@@ -78,7 +78,7 @@ function ProductDetail({ product }) {
         </Col>
       </Row>
       <Row>
-        <Col lg={{ span: 10, offset: 7 }}xs={{ span: 21, offset: 1 }}>
+        <Col lg={{ span: 10, offset: 7 }} xs={{ span: 21, offset: 1 }}>
           {product.isTable === true ? (
             <TableDetailImg />
           ) : (

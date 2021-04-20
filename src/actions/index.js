@@ -3,6 +3,8 @@ import {
   SET_NAVBAR_ACTIVEITEM,
   CART_ITEM_ADD,
   CART_ITEM_REMOVE,
+  Compare_ITEM_ADD,
+  Compare_ITEM_REMOVE,
 } from "../utils/constants";
 
 export const pageContentsSet = (dispatch, products) => {
@@ -37,6 +39,28 @@ export const cartItemAdd = (dispatch, product, qty) => {
 export const cartItemRemove = (dispatch, productId) => {
   dispatch({
     type: CART_ITEM_REMOVE,
+    payload: productId,
+  });
+};
+
+export const compareItemAdd = (dispatch, product, qty) => {
+  const item = {
+    id: product.id,
+    image: product.image,
+    name: product.name,
+    description: product.description,
+    price: product.price,
+    qty,
+  };
+  dispatch({
+    type: Compare_ITEM_ADD,
+    payload: item,
+  });
+};
+
+export const compareItemRemove = (dispatch, productId) => {
+  dispatch({
+    type: Compare_ITEM_REMOVE,
     payload: productId,
   });
 };

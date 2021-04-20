@@ -1,4 +1,4 @@
-import { Layout } from "antd";
+import { Layout, BackTop } from "antd";
 import Appheader from "../components/Header";
 import AppFooter from "../components/Footer";
 import ShoppingDetail from "../components/ShoppingBag";
@@ -19,6 +19,7 @@ function Home() {
           <AppFooter />
         </Footer>
       </Layout>
+      <BackTop />
     </Layout>
   );
 }

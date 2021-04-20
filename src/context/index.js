@@ -6,12 +6,18 @@ import {
   SET_NAVBAR_ACTIVEITEM,
   CART_ITEM_ADD,
   CART_ITEM_REMOVE,
+  Compare_ITEM_ADD,
+  Compare_ITEM_REMOVE,
 } from "../utils/constants";
 
 export const StoreContext = createContext();
 
 let cartItems = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
+  : [];
+
+let compareItems = localStorage.getItem("compareItems")
+  ? JSON.parse(localStorage.getItem("compareItems"))
   : [];
 
 const initialState = {
@@ -22,6 +28,7 @@ const initialState = {
     activeItem: "/",
   },
   cartItems,
+  compareItems,
 };
 
 function reducer(state, action) {
@@ -56,6 +63,20 @@ function reducer(state, action) {
     case CART_ITEM_REMOVE:
       cartItems = state.cartItems.filter((x) => x.id !== action.payload);
       return { ...state, cartItems };
+    case Compare_ITEM_ADD:
+      const Item = action.payload;
+      const Product = state.cartItems.find((x) => x.id === Item.id);
+      if (Product) {
+        compareItems = state.compareItems.map((x) =>
+          x.id === product.id ? Item : x
+        );
+        return { ...state, compareItems };
+      }
+      compareItems = [ ...state.compareItems, Item];
+      return { ...state, compareItems };
+    case Compare_ITEM_REMOVE:
+      compareItems = state.compareItems.filter((x) => x.id !== action.payload);
+      return { ...state, compareItems};
     default:
       return state;
   }

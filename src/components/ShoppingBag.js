@@ -33,7 +33,6 @@ export default function ShoppingDetail() {
     <div className="shoppingbag">
       <Steps className="shoppingbag-steps" current={0}>
         <Step className="shoppingbag-step" title="選購品項" />
-        <Step className="shoppingbag-step" title="準備結帳" subTitle="" />
         <Step
           className="shoppingbag-step"
           title="填寫資料"

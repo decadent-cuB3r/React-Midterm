@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { StoreContext } from "../context/index";
-import { Badge } from "antd";
+import { Badge, Menu, Dropdown } from "antd";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import cart from "../images/cart.png";
@@ -18,6 +18,27 @@ export default function Header() {
       ? cartItems.reduce((sum, item) => sum + item.qty, 0)
       : 0;
 
+  const menu = (
+    <Menu>
+      <Menu.ItemGroup title="商品分類">
+        <Menu.Item>
+          <Link to="product/tables">電動麻將桌</Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link to="/product/tableAccessory">電動麻將桌配件</Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link to="/product/mahjong">手打麻將</Link>
+        </Menu.Item>
+      </Menu.ItemGroup>
+      <Menu.ItemGroup title="其他">
+        <Menu.Item>
+          <Link to="/compare">商品比較</Link>
+        </Menu.Item>
+      </Menu.ItemGroup>
+    </Menu>
+  );
+
   return (
     <div className="header">
       <header className="header-wrap">
@@ -32,11 +53,13 @@ export default function Header() {
             <br />
             About
           </Link>
-          <Link to="/product" className="header-nav-text">
-            產品資訊
-            <br />
-            Product
-          </Link>
+          <Dropdown overlay={menu} placement="bottomCenter">
+            <Link to="/product" className="header-nav-text">
+              產品資訊
+              <br />
+              Product
+            </Link>
+          </Dropdown>
           <Link to className="header-nav-text">
             最新消息
             <br />
