@@ -30,6 +30,7 @@ body {
     background-color: #fff;
     height: 102px;
     padding: 0%;
+    padding-top: 2%;
 }
 
 .detail-layout {
@@ -240,6 +241,12 @@ body {
     font-size: 20px;
     line-height: 40px;
     text-align: center;
+    transition: all 0.5s;
+}
+
+.about-content-btn:hover {
+    background: #fdbb12;
+    transform: scale(1.1);
 }
 
 
@@ -427,6 +434,12 @@ body {
     margin: auto;
     margin-top: 1%;
     line-height: 49px;
+    transition: all 0.5s;
+}
+
+.order-btn:hover {
+    background-color: rgba(240, 240, 240, 0.966);
+    transform: scale(1.1);
 }
 
 
@@ -509,6 +522,12 @@ body {
     font-weight: bolder;
     margin-top: 10%;
     margin-left: 65%;
+    transition: all 0.3s;
+}
+
+.location-btn:hover {
+    color: #fff;
+    background-color: #ffb800;
 }
 
 
@@ -542,6 +561,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    line-height: 30px;
+    margin-left: 2%;
 }
 
 .product-price-wrap {
@@ -552,17 +573,18 @@ body {
 
 .product-qty {
     margin-bottom: 4%;
-    display: flex;
     justify-content: space-between;
 }
 
-.Tabledetail {
+.TableDetail {
     margin-right: auto;
     margin-left: auto;
+    max-width: 100%;
+    margin-top: 2%;
 }
 
-.Tabledetail-img {
-    width: 100%;
+.TableDetail-img {
+    max-width: 100%;
     height: auto;
 }
 
@@ -875,9 +897,14 @@ body {
 
 /* shoppingbag */
 
+main {
+    background-color: #fff;
+}
+
 .shoppingbag {
     width: 70%;
     margin: auto;
+    background-color: #fff;
 }
 
 .shoppingbag-steps {
@@ -948,24 +975,43 @@ body {
 }
 
 .shoppingbag-keepshopping-btn {
-    color: #ffb524;
+    text-align: center;
     background-color: #fff;
-    border: #ffb524;
-    opacity: 0.6;
     width: 100%;
 }
 
 .shoppingbag-checkout-btn {
-    color: #ffb524;
+    text-align: center;
     background-color: #fff;
-    border: #ffb524;
-    opacity: 0.6;
     width: 100%;
 }
 
-.shoppingbag-checkout-btn:hover {
-    color: #ffb524;
-    opacity: 1;
+.shoppingbag-btn-style-1 {
+    border: 0 #fff;
+    width: 100%;
+    color: #fff;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.shoppingbag-btn-style-1:hover {
+    border: 0 #fff;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(129, 129, 129);
+}
+
+.shoppingbag-btn-style-2 {
+    border: 0 #fff;
+    width: 100%;
+    color: #fff;
+    background-color: #ffb800;
+}
+
+.shoppingbag-btn-style-2:hover {
+    border: 0 #fff;
+    width: 100%;
+    color: #fff;
+    background-color: #e9aa0a;
 }
 
 @media (max-width: 992px) {
